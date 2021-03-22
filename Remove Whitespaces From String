@@ -1,0 +1,8 @@
+
+// How to remove Whitespaces from String
+class HelloWorld {
+    public static void main(String[] args) {
+        StringBuilder st =new StringBuilder("tomoto ramgopal  ramgopal");
+        System.out.println(st.toString().replaceAll(" ", ""));
+    }
+}
