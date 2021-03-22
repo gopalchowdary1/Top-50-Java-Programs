@@ -6,3 +6,24 @@ class HelloWorld {
         System.out.println(st.toString().replaceAll(" ", ""));
     }
 }
+
+
+
+// How to remove Whitespaces from String with out using redefinde methods
+class HelloWorld {
+    public static void main(String[] args) {
+        StringBuilder st =new StringBuilder("tomoto ramgopal ramgopal");
+        System.out.println(whiteSpaceRemove(st.toString()));
+    }
+    static String whiteSpaceRemove(String st){
+        // char[] charArray=st.toCharArray();
+        
+        StringBuilder res= new StringBuilder();
+        for(int i=0;i<st.length();i++){
+            if(st.charAt(i)!=' ')
+                res.append(st.charAt(i));            
+        }
+    
+        return res.toString();
+    }
+}
