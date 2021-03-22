@@ -23,3 +23,18 @@ class HelloWorld {
         
     }
 }
+
+
+
+// Using String Builder 
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        String str="hello";
+        // first convert String in to String Builder Class
+        StringBuilder newStr= new StringBuilder(str);
+        System.out.println(newStr.reverse());
+    }
+    
+}
