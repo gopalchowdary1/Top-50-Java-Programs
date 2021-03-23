@@ -1,0 +1,22 @@
+// Online Java Compiler
+//  Check if a List of integers contains only odd numbers?
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int odd[]= {1,5,7,9,9,7,5};
+        System.out.println(checkOdd(odd));
+    }
+    static boolean checkOdd(int[] odd){
+        boolean res=true;
+        for(int a:odd){
+            if(a%2==0){
+                return false;
+            }
+                
+        }
+        
+    return true;    
+    }
+    
+}
